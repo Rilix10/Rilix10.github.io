@@ -1,9 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
-		<title>最初のWebページ</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>STAYのすゝめ</title>
+		<link rel="stylesheet" href="./main.css?v=1.0">
+		<link rel="stylesheet" href="./swiper-bundle.min.css?v=1.0">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1″>
 	</head>
+	
 	<body>
-		こんにちは！
-	</body>
-</html>
+		<div class="header">
+			<div class="top-box">
+				<div class="page-header">
+					<h1 class="header-logo"><a href="main_index.html" class="title_menu">STAYのすゝめ</a></h1>
+					<nav>
+						<ul class="main-nav">
+							<li><a href="main_index.html" class="header-font">Home</a>
+								<ul>
+									<li><a class="main_index.html#aboutSTAYのすすめ" class="navi-contets">STAYのすすめとは?</a></li>
+									<li><a class="main_index.html#WhoisStrayKids" class="navi-contets">Who is Stray Kids?</a></li>
+									<li><a class="main_index.html#Schedule" class="navi-contets">schedule</a></li>
+								</ul>
+							</li>
+							<li><a href="members.html" class="header-font">Member</a>
+								<ul>
+									<li><a href="members.html#Members" class="navi-contets">メンバー</a></li>
+									<li><a href="members.html#combination" class="navi-contets">ケミ紹介</a></li>
+								</ul>							
+							</li>
+							<li><a href="straykids.html" class="header-font">Stray Kids</a>
+								<ul>
+								<li><a href="Straykids.html#Information" class="navi-contets">Works</a></li>
+								<li><a href="Straykids.html#Schedule" class="navi-contets">Schedule</a></li>
+								<li><a href="information.html" class="navi-contets">information</a></li>
+								</ul>						
+							</li>
+							<li><a href="For_you.html" class="header-font">For You</a>
+								<ul>
+									<li><a href="For_you.html#recommend-contents" class="navi-contets">おすすめコンテンツ</a></li>
+									<li><a href="For_you.html#scene-playlist" class="navi-contets">シーン別プレイリスト</a></li>
+									<li><a href="For_you.html#top" class="navi-contets">聖地巡礼スポット</a></li>
+								</ul>						
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>	
+		
+		<section class="fullscreen-hero">
+			<div class="hero-content">
+				<h1 class="hero-title">STAYのすゝめ</h1>
+				<p class="hero-subtitle">An unofficial fansite for STAY by STAY.</p>
+			</div>
+		</section>
+
+
+		<main class="website_contents">
+					<section>
+						<h2 id="aboutSTAYのすすめ" class="section-title">STAYのすすめとは</h2>
+						<p>最近Stray Kidsが気になる･･･！という新米STAYのためになることを目指した非公式ファンサイトです。<br>
+						メンバー紹介からおすすめしたい聖地巡礼スポットまでのコア情報までまとめてお届け！あなたの「気になる」が解決するかも✨</p>
+					</section>
+					
+					<section>
+						<h2 id="WhoisStrayKids" class="section-title">Who is Stray Kids?</h2>
+						<div class="content-grid">
+							<div class"content-text">
+								<p><strong>Stray Kids（ストレイキッズ）</strong><br>
+								2017年デビューした、JYPエンターテインメント所属８人組ボーイズグループ🎤✨
+								メンバー各自の得意分野を活かしたチーム内ユニット：３RACHA（スリーラチャ）・DANCE RACHA・VOCAL RACHAを持つ彼らは、
+								ラップ＆作詞作曲を担う３RACHAを中心に、ほぼすべての楽曲を作詞・作曲する自主製作アイドルだ。
+								強みは何といってもメッセージ性の強い楽曲の数々、そして <strong>Stray Kids Everywhere all around the world</strong>と世界中のファンに寄り添う姿勢。
+								楽曲やプライベートでも等身大の姿を見せてくれる彼らに、沼らずにはいられない！</p>
+							</div>
+						
+							<div class="content-image">
+								<div class="switch-image">
+									<a href="straykids.html">
+										<img src="./images/readmore.jpg" class="members-pic">
+										<img src="./images/hover-readmore.jpg" class="members-pic">
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<h2 id="Schedule" class="section-title">Schedule</h2>
+						<p class="today_date">コンサートからアルバム発売日まで、マストで確認したいスケジュールを定期更新します</p>	
+						<br>
+						<div class="calendar-wrapper">
+						  <div class="calendar-header">
+							<button onclick="changeMonth(-1)">←</button>
+							<span id="month-title"></span>
+							<button onclick="changeMonth(1)">→</button>
+						  </div>
+						  <div id="calendar"></div>
+						</div>
+							
+						<!-- モーダルまたは簡単な入力用 -->
+						<div id="event-input" style="display:none; position: fixed; top: 20%; left: 40%; background: #ffffff; border: 1px solid #000; padding: 10px;">
+						  <p id="selected-date"></p>
+						  <input type="text" id="event-text" placeholder="予定を入力">
+						  <button onclick="addEvent()">追加</button>
+							<button onclick="closeEventInput()">閉じる</button>
+						</div>
+					</section>
+
+
+					<section>
+						<h2 id="Information" class="section-title">Information</h2>
+						<p>最新情報を更新します</p>
+
+
+						<div class="info-card">
+							<input type="checkbox" id="cb4" class="toggle">
+							
+							<div class="info-header">
+								<h3 class="info-title">Stray Kids JAPAN 3rd Mini Album『Hollow』</h3>
+								<span class="info-date">2025.06.11 (Wed)</span>
+							</div>
+							<p class="info-summary">Music Video</p>
+							<div class="more_wrap">
+								<p>
+									Stray Kids JAPAN 3rd Mini Album『Hollow』<br>
+									<br>
+									Hollow<br>
+									Music Video<br>
+									<a href="https://youtu.be/F4qFzuCA9Po" target="_blank">https://youtu.be/F4qFzuCA9Po</a><br>
+								</p>
+							</div>
+							<label for="cb4" class="more_btn"></label>
+						</div>
+
+
+						<div class="info-card">
+							<input type="checkbox" id="cb" class="toggle">
+							
+							<div class="info-header">
+							  <h3 class="info-title">Stray Kids JAPAN 3rd Mini Album『Hollow』</h3>
+							  <span class="info-date">2025.06.10 (Tue) 0:00</span>
+							</div>
+							<p class="info-summary">Music Video Teaser 2</p>
+							<div class="more_wrap">
+							  <p>
+								🎬 MV Teaser 2<br>
+								<a href="https://youtu.be/JzDNzU2b7O0" target="_blank">https://youtu.be/JzDNzU2b7O0</a>
+							  </p>
+							  <p>
+								🌿 Special Site<br>
+								<a href="http://straykidsjapan.com/hollow/" target="_blank">http://straykidsjapan.com/hollow/</a>
+							  </p>
+							</div>
+							<label for="cb" class="more_btn"></label>
+						</div>
+						
+						<div class="info-card">
+							<input type="checkbox" id="cb2" class="toggle">
+							
+							<div class="info-header">
+								<h3 class="info-title">Stray Kidsフィリックス、Gong chaグローバルアンバサダー抜擢</h3>
+								<span class="info-date">2025.06.10 (Tue) 0:00</span>
+							</div>
+							<p class="info-summary">Gong cha、ブランドモデルでストレイキッズ「フィリックス」抜擢🧋</p>
+							<div class="more_wrap">
+								<p>
+									グローバルプレミアムミルクティーブランドGong chaは、ブランドアンバサダー（モデル）でStray Kidsのメンバー「フィリックス」を抜擢したと9日明らかにした。
+									今回のモデル抜擢はグローバルブランドの地位を強化し、世界中のMZ世代との接点を広げるためのものだ。
+									フィリックスはミルクティー愛好家としてよく知られ、消費者との共感と信頼を同時に引き出すことができるというのが抜擢の背景だ。
+									フィリックスと共にする公差の新しいブランドキャンペーンは今月中旬、韓国を皮切りに全世界に公開される予定だ。
+									Gong cha Korea関係者は「フィリックスはGong chaに対する真正な愛情とグローバルな影響力の両方を備えた人物で、誰でも簡単でおいしく楽しめるティー文化を広めるためにブランドが志向する価値と自然に触れている」とし、「今後様々なキャンペーンを通じて、世界中の消費者にGong chaを感覚的に伝える」と言った。
+									<br>
+									引用元:
+									<a href="naver.me/xR23uD9C" target="_blank">naver.me/xR23uD9C</a><br>
+								</p>
+							</div>
+							<label for="cb2" class="more_btn"></label>
+						</div>						
+					  
+						<div class="info-card">
+							<input type="checkbox" id="cb3" class="toggle">
+							
+							<div class="info-header">
+								<h3 class="info-title">Stray Kids JAPAN 3rd Mini Album『Hollow』</h3>
+								<span class="info-date">2025.06.09 (Mon) 0:00</span>
+							</div>
+							<p class="info-summary">Music Video Teaser 1</p>
+							<div class="more_wrap">
+							  <p>
+								🎬 MV Teaser 1<br>
+								<a href="https://youtu.be/Zypw5EE-rrg" target="_blank">https://youtu.be/Zypw5EE-rrg</a>
+							  </p>
+							  <p>
+								🌿 Special Site<br>
+								<a href="http://straykidsjapan.com/hollow/" target="_blank">http://straykidsjapan.com/hollow/</a>
+							  </p>
+							</div>
+							<label for="cb3" class="more_btn"></label>
+						</div>
+					
+						<a href="information.html"　class="SNS-text">Read more</a>
+					</section>
+				
+					<section>
+						<br>
+						<h2 id="SNS" class="section-title">Official SNS</h2>
+							<div>
+								<ul>
+									<li><a href="https://x.com/stray_kids" class="SNS-text">✰X</a></li>
+									<li><a href="https://www.instagram.com/realstraykids/" class="SNS-text">✰Instagram</a></li>
+									<li><a href="https://www.threads.com/@realstraykids" class="SNS-text">✰Threads</a></li>
+									<li><a href="https://www.tiktok.com/@jypestraykids" class="SNS-text">✰TikTok</a></li>
+									<li><a href="https://www.tiktok.com/@straykids_japan" class="SNS-text">✰日本公式TikTok</a></li>
+									<li><a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="SNS-text">✰Youtube</a></li>
+									<li><a href="https://www.youtube.com/channel/UCXhj2pPWvONXmvgHX5wllCA" class="SNS-text">✰日本公式Youtube</a></li>
+								</ul>
+							</div>
+					</section>
+				
+				<br>
+				<br>			
+					
+					<a href="#top">上に戻る</a>
+				</div>
+			</div>
+		</main>
+			
+			<footer >
+				<div class="site-footer">
+					<div class="flex-container-footer">
+						<div class="box-item-footer">
+							<p class="footer-navi-heading">Home</p>
+							<ul>
+								<li><a href="main_index.html#aboutSTAYのすすめ" class="navi-contets">STAYのすすめとは?</a></li>
+								<li><a href="main_index.html#WhoisStrayKids" class="navi-contets">Who is Stray Kids?</a></li>
+								<li><a href="main_index.html#Schedule" class="navi-contets">schedule</a></li>
+								<li><a href="main_index.html#Information" class="navi-contets">Information</a></li>
+							</ul>
+						</div>
+						<div class="box-item-footer">
+							<p class="footer-navi-heading">Stray Kids</p>
+							<ul>
+									<li><a href="Straykids.html#Information" class="navi-contets">Works</a></li>
+									<li><a href="Straykids.html#Schedule" class="navi-contets">Schedule</a></li>
+									<li><a href="information.html" class="navi-contets">information</a></li>
+							</ul>
+						</div>
+						<div class="box-item-footer">
+							<p class="footer-navi-heading">Member</p>
+							<ul>
+								<li><a href="members.html#Members" class="navi-contets">メンバー</a></li>
+								<li><a href="members.html#combination" class="navi-contets">ケミ紹介</a></li>
+							</ul>
+						</div>
+						<div class="box-item-footer">
+							<p class="footer-navi-heading">For you</p>
+							<ul>
+								<li><a href="For_you.html#recommend-contents" class="navi-contets">おすすめコンテンツ</a></li>
+								<li><a href="For_you.html#scene-playlist" class="navi-contets">シーン別プレイリスト</a></li>
+								<li><a href="For_you.html#top" class="navi-contets">聖地巡礼スポット</a></li>
+							</ul>
+						</div>
+					</div>
+					<p class=coppyright>
+						Copyright © JYP ENTERTAINMENT Co., Ltd. All rights reserved.
+					</p>
+				</div>
+			</footer>
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./main.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Kosugi+Maru&family=M+PLUS+1p&display=swap" rel="stylesheet">	
+	
+	</body>		
+</html>	
+\
