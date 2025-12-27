@@ -556,6 +556,9 @@ a {
     width: 100%;
     height: auto;
   }
+  .fullscreen-hero {
+    height: 80vh;
+  }
 
   .hero-title {
     font-size: 2.5rem;
@@ -628,3 +631,4 @@ a {
     height: 250px;
   }
 }
+
