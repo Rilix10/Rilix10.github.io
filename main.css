@@ -533,78 +533,98 @@ a {
 }
 
 /* =========================
-   タブレット用（〜1024px）
+   タブレット対応（〜1024px）
 ========================= */
 @media screen and (max-width: 1024px) {
+
   .website_contents {
-    margin: 5% 6%;
+    margin: 5%;
   }
+
+  .main-nav li {
+    margin: 0 30px;
+  }
+
   .members-pic {
     width: 100%;
     height: auto;
   }
-  .media-object {
-    gap: 1rem;
+
+  .photosize1,
+  .photosize3,
+  .photosize4 {
+    width: 100%;
+    height: auto;
   }
-  .main-nav li {
-    margin: 0 30px;
-  }
-  .swiper-container {
-    height: 300px;
+
+  .hero-title {
+    font-size: 2.5rem;
   }
 }
 
+
 /* =========================
-   スマホ用（〜768px）
+   スマホ対応（〜768px）
 ========================= */
 @media screen and (max-width: 768px) {
-  /* 全体余白 */
+
+  body {
+    font-size: 14px;
+  }
+
   .website_contents {
-    margin: 6% 5%;
+    margin: 5% 3%;
   }
-  /* 見出し */
-  .section-title {
-    font-size: 1.2rem;
+
+  /* ヘッダー */
+  .page-header {
+    flex-direction: column;
+    justify-content: center;
   }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
   /* メインビジュアル */
+  .fullscreen-hero {
+    height: 70vh;
+    background-attachment: scroll; /* スマホ対策 */
+  }
+
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     letter-spacing: 0.05em;
   }
-  /* 横並び → 縦並び */
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* グリッド → 縦並び */
   .media-object {
     flex-direction: column;
   }
+
   .content-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  /* 画像サイズ調整 */
-  .photosize1,
-  .photosize3,
-  .photosize4,
-  .members-pic {
-    width: 100%;
-    height: auto;
-  }
-  /* ナビゲーション（簡易） */
-  .main-nav {
-    display: none;
-  }
-  /* スライダー */
-  .swiper-container {
-    height: 220px;
-  }
-  /* カード余白 */
-  .card {
-    padding: 1.2rem;
-  }
-  /* カレンダー文字小さく */
-  .calendar-table {
+
+  /* カレンダー */
+  .calendar-table th,
+  .calendar-table td {
+    height: 40px;
     font-size: 0.8rem;
   }
+
+  /* スライダー */
+  .swiper-container {
+    height: 250px;
+  }
 }
-
-
-
-
