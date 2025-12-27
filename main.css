@@ -549,5 +549,93 @@ a {
   z-index: 10;
 }
 
+/* =========================
+   タブレット用（〜1024px）
+========================= */
+@media screen and (max-width: 1024px) {
+
+  .website_contents {
+    margin: 5% 6%;
+  }
+
+  .members-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .media-object {
+    gap: 1rem;
+  }
+
+  .main-nav li {
+    margin: 0 30px;
+  }
+
+  .swiper-container {
+    height: 300px;
+  }
+}
+
+/* =========================
+   スマホ用（〜768px）
+========================= */
+@media screen and (max-width: 768px) {
+
+  /* 全体余白 */
+  .website_contents {
+    margin: 6% 5%;
+  }
+
+  /* 見出し */
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  /* メインビジュアル */
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* 横並び → 縦並び */
+  .media-object {
+    flex-direction: column;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* 画像サイズ調整 */
+  .photosize1,
+  .photosize3,
+  .photosize4,
+  .members-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ナビゲーション（簡易） */
+  .main-nav {
+    display: none;
+  }
+
+  /* スライダー */
+  .swiper-container {
+    height: 220px;
+  }
+
+  /* カード余白 */
+  .card {
+    padding: 1.2rem;
+  }
+
+  /* カレンダー文字小さく */
+  .calendar-table {
+    font-size: 0.8rem;
+  }
+}
+
 
 
