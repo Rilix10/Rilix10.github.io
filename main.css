@@ -105,7 +105,7 @@ p {
     justify-content: center;
     color: #FFFFFF;
     text-align: center;
-    background-image: url('./images/hollow-main.jpg'); 
+    background-image: url('Images/hollow-main.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -548,4 +548,5 @@ a {
   transform: translateY(-50%);
   z-index: 10;
 }
+
 
