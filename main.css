@@ -535,7 +535,7 @@ a {
 /* =========================
    タブレット対応（〜1024px）
 ========================= */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
 
   .website_contents {
     margin: 5%;
@@ -569,7 +569,7 @@ a {
 /* =========================
    スマホ対応（〜768px）
 ========================= */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 479px) and (max-width: 600px) {
 
   body {
     font-size: 14px;
@@ -631,5 +631,6 @@ a {
     height: 250px;
   }
 }
+
 
 
