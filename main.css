@@ -3,7 +3,8 @@
 body {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: 100vh;
+	width: 100vw;
 	background-color: #F5F5F0;
 	color: #333333;
 	margin: 0;
@@ -546,7 +547,7 @@ a {
   }
 
   .members-pic {
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 
@@ -555,9 +556,6 @@ a {
   .photosize4 {
     width: 100%;
     height: auto;
-  }
-  .fullscreen-hero {
-    height: 80vh;
   }
 
   /* メインビジュアル */
@@ -638,6 +636,7 @@ a {
     height: 250px;
   }
 }
+
 
 
 
