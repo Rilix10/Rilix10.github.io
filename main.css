@@ -560,6 +560,12 @@ a {
     height: 80vh;
   }
 
+  /* メインビジュアル */
+  .fullscreen-hero {
+    height: 70vh;
+	width: 100vh;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -597,6 +603,7 @@ a {
   /* メインビジュアル */
   .fullscreen-hero {
     height: 70vh;
+	width: 100vh;
     background-attachment: scroll; /* スマホ対策 */
   }
 
@@ -631,6 +638,7 @@ a {
     height: 250px;
   }
 }
+
 
 
 
