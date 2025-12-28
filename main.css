@@ -43,7 +43,7 @@ main {
 }
 
 .website_contents {
-	margin: 3% 10% 3%;
+	margin: 3vh 10vw 3vh;
 	display: block;
 	position: relative;
 }
@@ -97,7 +97,7 @@ p {
 /* メインビジュアルのセクション */
 .fullscreen-hero {
     height: 100vh;
-	width: 100%;
+	width: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -631,4 +631,5 @@ a {
     height: 250px;
   }
 }
+
 
