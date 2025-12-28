@@ -600,6 +600,7 @@ a {
   /* メインビジュアル */
   .fullscreen-hero {
     height: 70vh;
+    background-image: url('https://raw.githubusercontent.com/Rilix10/Rilix10.github.io/refs/heads/main/Images/IMG_0070.jpg'); 
     background-attachment: scroll;
   }
 
@@ -634,6 +635,7 @@ a {
     height: 250px;
   }
 }
+
 
 
 
