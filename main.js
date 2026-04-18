@@ -1,10 +1,10 @@
 // jQuery: ハンバーガーメニュー
 const hbmenu = document.getElementById('hb-menu');
-const navMenu = document.getElementById('nav-menu');
+const mannav = document.getElementById('main-nav');
 
 hbmenu.addEventListener('click', () => {
 	hbmenu.classList.toggle('open');
-	navMenu.classList.toggle('active');
+	mainnav.classList.toggle('active');
 });
 
 // カレンダー生成
