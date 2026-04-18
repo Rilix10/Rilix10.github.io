@@ -578,26 +578,30 @@ a {
     font-size: 14px;
   }
   .website_contents {
-    margin: 5% 5%;
+    margin: 3% 5%;
   }
 
   /* ヘッダー */
   .page-header {
-	position: relative;
+	display: flex;
     flex-direction: row;
     justify-content: space-between;
 	height: 70px;
 	align-items: center;
+	padding: 0.5%;
   }
 	.hb-menu {
 		display: flex;
 		flex-direction:column;
 		justify-content: space-between;
 		width: 30px;
-		height: 20px;
+		height: 25px;
 		cursor: pointer;
-		transform: none;
 		z-index: 1100;
+		position: relative;
+		top: auto;
+		transform: none;
+		right: 0;
 	}
 	.hb-menu span {
 		display: block;
