@@ -585,51 +585,54 @@ a {
 
   /* ヘッダー */
   .page-header {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-nav li {
-    margin: 10px 0;
+	position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+	height: 70px;
   }
 	.hb-menu {
 		display: flex;
 		flex-direction:column;
 		justify-content: space-between;
-		width: 25px;
-		height: 20px;
+		width: 30px;
+		height: 22px;
 		cursor: pointer;
-		position: sbsolute;
-		top: 25px;
+		position: absolute;
+		top: 50%;
 		right: 20px;
 		z-index: 1100;
 	}
 	.hb-menu span{
 		display: block;
+		width: 100%;
 		height: 3px;
-		background-color: #333;
+		background-color: #FFFFFF;
 		border-radius: 2px;
 		transition: 0.3s;
 	}
+	/*メニュー本体の表示切り替え*/
 	.main-nav {
 		display: none;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background: #4B5D43;
 		flex-direction: column;
+		padding: 20px 0;
 	}
 	.main-nav.active {
 		display: flex;
 	}
 	/* ハンバーガーが×になるアニメーション*/
 	.hb-menu.open span:nth-child(1) {
-		transform: rotate(45deg) translate(5px, 5px);
+		transform: rotate(45deg) translate(9.5px);
 	}
 	.hb-menu.open span:nth-child(2) {
 		opacity: 0;
 	}
 	.hb-menu.open span:nth-child(3) {
-		transform: rotate(-45deg) translate(5px, -5px);
+		transform: rotate(-45deg) translate(-9.5px);
 	}
 	
 
