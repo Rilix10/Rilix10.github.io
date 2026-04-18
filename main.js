@@ -1,6 +1,6 @@
 // jQuery: ハンバーガーメニュー
 const hbmenu = document.getElementById('hb-menu');
-const mannav = document.getElementById('main-nav');
+const mainnav = document.getElementById('main-nav');
 
 hbmenu.addEventListener('click', () => {
 	hbmenu.classList.toggle('open');
