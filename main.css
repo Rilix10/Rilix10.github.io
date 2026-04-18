@@ -578,7 +578,7 @@ a {
     font-size: 14px;
   }
   .website_contents {
-    margin: 5% 3%;
+    margin: 5% 5%;
   }
 
   /* ヘッダー */
@@ -597,7 +597,7 @@ a {
 		height: 20px;
 		cursor: pointer;
 		position: absolute;
-		top: 50%;
+		top: 20%;
 		right: 20px;
 		transform: transleteY(-50%);
 		z-index: 1100;
