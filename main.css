@@ -588,15 +588,40 @@ a {
     flex-direction: column;
     justify-content: center;
   }
-
   .main-nav {
     flex-direction: column;
     align-items: center;
   }
-
   .main-nav li {
     margin: 10px 0;
   }
+	.hb-menu {
+		display: none;
+		flex-direction:column;
+		justify-content: space-between;
+		width: 25px;
+		height: 20px;
+		cursor: absolute;
+		top: 25px;
+		right: 20px;
+		z-index: 1100;
+	}
+	.hb-menu span{
+		height: 3px;
+		backgorund: #333;
+		border-radius: 2px;
+		transition: 0.3s;
+	}
+	.hb-menu.open span:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+	.hb-menu.open span:nth-child(2) {
+		opacity: 0;
+	}
+	.hb-menu.open span:nth-child(3) {
+		transform: rotate(-45deg) translate(5px, -5px);
+	}
+	
 
   /* メインビジュアル */
   .fullscreen-hero {
@@ -604,12 +629,10 @@ a {
     background-image: url('https://raw.githubusercontent.com/Rilix10/Rilix10.github.io/refs/heads/main/Images/IMG_0070.jpg'); 
     background-attachment: scroll;
   }
-
   .hero-title {
     font-size: 2rem;
     letter-spacing: 0.05em;
   }
-
   .hero-subtitle {
     font-size: 0.9rem;
   }
@@ -618,7 +641,6 @@ a {
   .media-object {
     flex-direction: column;
   }
-
   .content-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
