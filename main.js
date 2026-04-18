@@ -1,9 +1,10 @@
 // jQuery: ハンバーガーメニュー
-$(function(){
-  $('.menu-wrapper').on('click', function(){
-    $('.menu-lists').toggleClass('is-active');
-	$('.btn').toggleClass('close');
-  });
+const hbmenu = document.getElementById('hb-menu');
+const navMenu = document.getElementById('nav-menu');
+
+hbmenu.addEventListener('click', () => {
+	hbmenu.classList.toggle('open');
+	navMenu.classList.toggle('active');
 });
 
 // カレンダー生成
