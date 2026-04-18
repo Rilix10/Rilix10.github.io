@@ -597,9 +597,10 @@ a {
 		height: 20px;
 		cursor: pointer;
 		position: absolute;
-		top: 20%;
+		top: 50%;
 		right: 20px;
-		transform: transleteY(-50%);
+		bottom: 15px;
+		transform: none;
 		z-index: 1100;
 	}
 	.hb-menu span {
