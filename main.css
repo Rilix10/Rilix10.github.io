@@ -596,7 +596,6 @@ a {
     margin: 10px 0;
   }
 	.hb-menu {
-		display: none;
 		flex-direction:column;
 		justify-content: space-between;
 		width: 25px;
