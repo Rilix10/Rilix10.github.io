@@ -608,7 +608,7 @@ a {
 	}
 	.hb-menu span{
 		height: 3px;
-		backgorund: #333;
+		background: #333;
 		border-radius: 2px;
 		transition: 0.3s;
 	}
