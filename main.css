@@ -631,7 +631,14 @@ a {
 		margin: 15px 0;
 		text-align: center;
 	}
-	
+	.main-nav li ul {
+		position: static;
+		visibility: visible;
+		opacity: 1;
+		display: block;
+		background: rgba(0, 0, 0, 0.1);
+		margin-top: 10px;
+	}
 	/* ハンバーガーが×になるアニメーション*/
 	.hb-menu.open span:nth-child(1) {
 		transform: translateY(9.5px) rotate(45deg);
